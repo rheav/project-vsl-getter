@@ -46,7 +46,7 @@ function App() {
 		<div>
 			<form onSubmit={handleSubmit}>
 				<input type='text' value={url} onChange={handleInputChange} placeholder='Enter URL' />
-				<button type='submit'>Downloada</button>
+				<button type='submit'>Download</button>
 			</form>
 			<p>{status}</p>
 			{status === "✅ VSL Disponível" && (
