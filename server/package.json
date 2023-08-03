@@ -5,7 +5,7 @@
 	"scripts": {
 		"start": "node urlGET.js",
 		"start:dev": "nodemon urlGET.js",
-		"build": ""
+		"build": "npm"
 	},
 	"dependencies": {
 		"axios": "^1.4.0",
