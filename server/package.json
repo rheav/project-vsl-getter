@@ -1,6 +1,11 @@
 {
+	"engines": {
+		"node": ">=18"
+	},
 	"scripts": {
-		"start": "nodemon urlGET.js"
+		"start": "node urlGET.js",
+		"start:dev": "nodemon urlGET.js",
+		"build": ""
 	},
 	"dependencies": {
 		"axios": "^1.4.0",
