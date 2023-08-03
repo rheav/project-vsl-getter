@@ -5,7 +5,6 @@ const url = require("url");
 const path = require("path");
 const cliProgress = require("cli-progress");
 
-//teste
 // Read the URLs from the file
 const urls = fs.readFileSync(path.join(__dirname, "urlHolder", "urls.txt"), "utf8").split("\n");
 

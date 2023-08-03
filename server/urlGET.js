@@ -5,6 +5,7 @@ const { spawn } = require("child_process");
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const nodemon = require("nodemon");
 
 app.use(cors());
 app.use(express.json());

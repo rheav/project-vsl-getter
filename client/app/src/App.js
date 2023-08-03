@@ -16,7 +16,7 @@ function App() {
 		setStatus("Processing VSL...");
 		setUrl("");
 		try {
-			await axios.post("https://unfunnelizer-app.onrender.com//download", { url });
+			await axios.post("http://localhost:3001/download", { url });
 		} catch (error) {
 			console.error(error);
 		}
@@ -25,7 +25,7 @@ function App() {
 	useEffect(() => {
 		const interval = setInterval(async () => {
 			try {
-				const response = await axios.get("https://unfunnelizer-app.onrender.com//status");
+				const response = await axios.get("http://localhost:3001/status");
 				setStatus(response.data.status);
 				if (response.data.status === "✅ VSL Disponível") {
 					console.log(response); // Log the response when the video is available
@@ -58,7 +58,7 @@ function App() {
 				<>
 					<video
 						controls
-						src={`https://unfunnelizer-app.onrender.com//video/${videoFile}`}
+						src={`http://localhost:3001/video/${videoFile}`}
 						style={{ display: "block" }}
 					></video>
 				</>
